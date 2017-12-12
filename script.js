@@ -11,5 +11,6 @@ function changepic(){
 }
 
 function test(){
+  console.log("hello");
   setInterval(changepic, 4000);
 }
