@@ -9,6 +9,11 @@ function changepic(){
   console.log(headshots[index]);
   image.src= headshots[index];
 }
-window.onload = function() {
+
+function test(){
   setInterval(changepic, 4000);
+}
+
+window.onload = function() {
+  test();
 };
