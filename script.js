@@ -13,7 +13,3 @@ function changepic(){
 function test(){
   setInterval(changepic, 4000);
 }
-
-window.onload = function() {
-  test();
-};
