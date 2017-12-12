@@ -10,7 +10,5 @@ function changepic(){
   image.src= headshots[index];
 }
 
-function test(){
-  console.log("hello");
-  setInterval(changepic, 4000);
-}
+
+setInterval(changepic, 4000);
