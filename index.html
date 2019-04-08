@@ -5,6 +5,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/photo.css" />
+
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<script src="script.js"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -29,17 +31,15 @@
 							<ul>
 								<li><a href="#about">About</a></li>
 								<li><a href="#resume">Resume</a></li>
-								<!-- <li><a href="#about">About</a></li> -->
+								<li><a href="#photo" onclick="showPhoto()">Photo</a></li>
 								<li><a href="#exp">Experience</a></li>
-								<!-- <li><a href="http://graytalentgroup.com/talent/harry-belden/" target="_blank">Gray</a></li> -->
 								<li><a href="#contact">Contact</a></li>
-<!-- 								<li><a href="#elements">Elements</a></li> -->
 							</ul>
 						</nav>
 					</header>
 
 				<!-- Main -->
-					<div id="main">
+				<div id="main">
 
 						<!-- Intro -->
 							<!-- <article id="intro">
@@ -116,7 +116,7 @@
 										</br>
 										</br>
 										<!-- <video class="image main" src="" type="video/mp4" poster="" frameborder="0" gesture="media" allow="encrypted-media" preload="none" controls></video> -->
-										<button><a href="https://www.smithsonianchannel.com/shows/drinks-crime-and-prohibition/gangsters-and-g-men/1005389/3460429" target="_blank">Watch on the Smithsonian Channel</a></button>
+										<button><a href="https://www.smithsonianchannel.com/shows/drinks-crime-and-prohibition/gangsters-and-g-men/1005389/3460429" target="_blank">Watch on Smithsonian Channel</a></button>
 									</p>
 									<p>
 										<b>JEWEL-OSCO</b>
@@ -176,6 +176,53 @@
 								</audio>
 							</article>
 
+							<!-- Resume -->
+							<article id="photo" class="testing">
+								<h2 class="major">Photo Gallery</h2>
+								<div class = "row">
+									<div class = "column" id="column1">
+										<div class = "container">
+												<img class ="imgy" src ="photo/ohwhatlovely/ohwhatlovely_01.jpg" style="width:100%">
+												<div class = "testdiv">
+												</div>
+										</div>
+										<img src ="photo/stagereading/stagereading_01.jpg" style="width:100%">
+										<img src ="photo/aliens/aliens_01.jpg" style="width:100%">
+										<img src ="photo/2ndcity/2ndcity_03.jpg" style="width:100%">
+										<img src ="photo/failure/failure_04.jpg" style="width:100%">
+										<img src ="photo/ohwhatlovely/ohwhatlovely_10.jpg" style="width:100%">
+									</div>
+									<div class = "column" id="column2">
+										<img src ="photo/lettershome/lettershome_01.jpg" style="width:100%">
+										<img src ="photo/failure/failure_02.jpg" style="width:100%">
+										<img src ="photo/ohwhatlovely/ohwhatlovely_09.jpg" style="width:100%">
+										<img src ="photo/ohwhatlovely/ohwhatlovely_08.jpg" style="width:100%">
+										<img src ="photo/grapes/grapes_01.jpg" style="width:100%">
+										<img src ="photo/failure/failure_06.jpg" style="width:100%">
+									</div>
+									<div class = "column" id="column3">
+										<img src ="photo/failure/failure_01.jpg" style="width:100%">
+										<img src ="photo/ohwhatlovely/ohwhatlovely_07.jpg" style="width:100%">
+										<img src ="photo/grapes/grapes_02.jpg" style="width:100%">
+										<img src ="photo/ohwhatlovely/ohwhatlovely_06.jpg" style="width:100%">
+										<img src ="photo/ohwhatlovely/ohwhatlovely_02.jpg" style="width:100%">
+										<img src ="photo/ohwhatlovely/ohwhatlovely_03.jpg" style="width:100%">
+									</div>
+									<div class = "column" id="column4">
+										<img src ="photo/failure/failure_05.jpg" style="width:100%">
+										<img src ="photo/ohwhatlovely/ohwhatlovely_04.jpg" style="width:100%">
+										<img src ="photo/2ndcity/2ndcity_01.jpg" style="width:100%">
+										<img src ="photo/failure/failure_03.jpg" style="width:100%">
+										<img src ="photo/ohwhatlovely/ohwhatlovely_05.jpg" style="width:100%">
+										<img src ="photo/2ndcity/2ndcity_02.jpg" style="width:100%">
+									</div>
+								</div>
+
+
+
+							</article>
+
+
 						<!-- About -->
 							<article id="about" onclick="test();">
 								<h2 class="major">About</h2>
@@ -205,9 +252,9 @@ acting as a profession.</p>
 								<p><b>Location: </b> Chicago, IL </p>
 
 						<ul class="icons">
-							<li><a href="https://twitter.com/HarrysWatching" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://www.facebook.com/harry.belden" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/harrytakespictures/?hl=en" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://twitter.com/HarrysWatching" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/harry.belden" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/harrytakespictures/?hl=en" class="icon fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
 						</ul>
 
 
@@ -463,9 +510,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="icons">
-							<li><a href="https://twitter.com/HarrysWatching" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://www.facebook.com/harry.belden" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/harrytakespictures/?hl=en" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://twitter.com/HarrysWatching" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/harry.belden" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/harrytakespictures/?hl=en" class="icon fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
 						</ul>
 <!-- 						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p> -->
 					</footer>
