@@ -1,4 +1,5 @@
 var main = function() {
+
   $('.lightbox_trigger').click(function(e){
     e.preventDefault();
 
@@ -13,23 +14,51 @@ var main = function() {
     var ndcity_title = "The Second City";
     var ndcity_date = 2018;
     var lettershome_title = "Letters Home";
-    var letterhome_date = 2019;
+    var lettershome_date = 2019;
     var grapes_title = "Grapes of Wrath";
     var grapes_date = 2017;
 
-    var title = "";
-    var date = 0;
-
     var imagesrc= $(this).attr('src');
 
+
+    if(imagesrc.includes("ohwhatlovely")){
+      $('#image_title').text(ohwhatlovely_title);
+      $('#image_date').text(ohwhatlovely_date);
+    }
+    else if(imagesrc.includes("aliens")){
+      $('#image_title').text(aliens_title);
+      $('#image_date').text(aliens_date);
+    }
+    else if(imagesrc.includes("grapes")){
+      $('#image_title').text(grapes_title);
+      $('#image_date').text(grapes_date);
+    }
+    else if(imagesrc.includes("letter")){
+      $('#image_title').text(lettershome_title);
+      $('#image_date').text(lettershome_date);
+    }
+    else if(imagesrc.includes("stage")){
+      $('#image_title').text(stagereading_title);
+      $('#image_date').text(stagereading_date);
+    }
+    else if(imagesrc.includes("failure")){
+      $('#image_title').text(failure_title);
+      $('#image_date').text(failure_date);
+    }
+    else if(imagesrc.includes("city")){
+      $('#image_title').text(ndcity_title);
+      $('#image_date').text(ndcity_date);
+    }
+    else{
+      $('#image_title').text("Wow guess I forgot a title ... :|");
+      $('#image_date').text("I can assure you this happened in the ballpark of 1995 until now.");
+    }
+
+
     $('#lightboximg').attr('src', imagesrc);
-    var newlightbox = $('#lightboximg').attr('src');
-
-    var lightboxdescription = '<p><b>'+title+'</b>'+' '+'||'+' '+date+'</p>';
-
-    //$('#lightbox').append(lightboxdescription);
     $('#lightbox').show();
     $('.close').hide();
+
   });
 
   $('.closer').click(function(){
