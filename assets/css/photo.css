@@ -42,6 +42,14 @@
     margin-top: 100px;
 }
 
+#image_title{
+  display:inline;
+}
+
+#image_date{
+  display:inline;
+}
+
 .photopage{
   width: 1200px !important;
 }
