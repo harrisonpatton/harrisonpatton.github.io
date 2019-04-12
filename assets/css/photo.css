@@ -1,5 +1,48 @@
+#lightbox{
+  position:fixed !important; /* keeps the lightbox window in the current viewport */
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: none;
+  background: rgb(27, 31, 34) !important;
+  text-align:center;
+}
 
-.testing{
+.closer{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 1%3B %7D%3C/style%3E%3Cline x1='2' y1='2' x2='18' y2='18' /%3E%3Cline x1='18' y1='2' x2='2' y2='18' /%3E%3C/svg%3E");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 100%;
+  transition: background-color 0.2s ease-in-out;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top:20px;
+  margin-right:20px;
+}
+
+
+#lightbox p {
+    text-align:right;
+    color:#fff;
+    margin-right:20px;
+    font-size:12px;
+}
+
+#lightbox img {
+    box-shadow:0 0 25px #111;
+    -webkit-box-shadow:0 0 25px #111;
+    -moz-box-shadow:0 0 25px #111;
+    max-width:90% !important;
+    max-height: 84em;
+    margin-top: 100px;
+}
+
+.photopage{
   width: 1200px !important;
 }
 
