@@ -704,7 +704,7 @@ input[type='radio'] + label:before {
   -ms-pointer-events: none;
   pointer-events: none;
   background-image: url('../../images/overlay.png');
-  background-color: rgba(19, 21, 25, 0.5);
+  background-color: rgba(19, 21, 25, 0);
   border-radius: 4px;
   content: '';
   display: block;
@@ -795,6 +795,7 @@ ul {
 
 ul li {
   padding-left: 0.5em;
+  background-color: rgba(19, 21, 25, 0.35);
 }
 
 ul.alt {
@@ -1170,8 +1171,8 @@ button {
   transition-delay: 0.75s;
   background-image: linear-gradient(
       to top,
-      rgba(19, 21, 25, 0.5),
-      rgba(19, 21, 25, 0.5)
+      rgba(19, 21, 25, 0.1),
+      rgba(19, 21, 25, 0.1)
     ),
     url('../../images/overlay.png');
   background-size: auto, 256px 256px;
