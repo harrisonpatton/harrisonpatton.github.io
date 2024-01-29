@@ -1064,6 +1064,10 @@ button,
   white-space: nowrap;
 }
 
+.button-1 {
+  margin-right: 1rem;
+}
+
 input[type='submit']:hover,
 input[type='reset']:hover,
 input[type='button']:hover,
@@ -1261,6 +1265,9 @@ body.is-article-visible #bg:after {
 @media screen and (max-width: 480px) {
   #wrapper {
     padding: 1rem;
+  }
+  .button-1 {
+    margin-bottom: 1rem;
   }
 }
 
