@@ -271,6 +271,10 @@ h6.major {
   margin: 0 0 2rem 0;
 }
 
+h2.major_reel {
+  margin-bottom: 0;
+}
+
 h1 {
   font-size: 2.25rem;
   line-height: 1.3;
@@ -757,6 +761,10 @@ input[type='radio'] + label:before {
   display: block;
   margin: 2.5rem 0;
   width: 100%;
+}
+
+.image.main.reel {
+  margin: 1rem 0;
 }
 
 .image.main img {
